@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3a90d45091e198176aa5c54775cb8ed3",
-    "content-hash": "c6bfb4201837fc924b7b3dfa01d2fb90",
+    "hash": "a05efde113b06fe7ad41fc93c571a518",
+    "content-hash": "e7959a592497515f55e364c80763ccf3",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -117,16 +117,16 @@
         },
         {
             "name": "devdojo/chatter",
-            "version": "0.2.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thedevdojo/chatter.git",
-                "reference": "ca1b4d6e76dacbd77867d046f9bdcca0b6a75f61"
+                "url": "https://github.com/fwartner/chatter.git",
+                "reference": "be302617945668f8ae32d19f9c633a602442ca90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thedevdojo/chatter/zipball/ca1b4d6e76dacbd77867d046f9bdcca0b6a75f61",
-                "reference": "ca1b4d6e76dacbd77867d046f9bdcca0b6a75f61",
+                "url": "https://api.github.com/repos/fwartner/chatter/zipball/be302617945668f8ae32d19f9c633a602442ca90",
+                "reference": "be302617945668f8ae32d19f9c633a602442ca90",
                 "shasum": ""
             },
             "require-dev": {
@@ -141,7 +141,11 @@
                     "DevDojo\\Chatter\\": "/src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "classmap": [
+                    "tests/TestCase.php"
+                ]
+            },
             "authors": [
                 {
                     "name": "Tony Lea",
@@ -149,7 +153,10 @@
                 }
             ],
             "description": "A simple forum package for your laravel app",
-            "time": "2017-03-12 21:13:57"
+            "support": {
+                "source": "https://github.com/fwartner/chatter/tree/master"
+            },
+            "time": "2017-03-17 12:34:06"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4475,7 +4482,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "devdojo/chatter": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
