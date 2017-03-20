@@ -135,3 +135,9 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+// napisanie routingu voyagera - custom controller tworzy notke i wpis na forum
+
+Route::post('admin/posts', [
+    'as' => 'voyager.posts.store',
+    'uses' => 'VoyagerController@store',
+]);

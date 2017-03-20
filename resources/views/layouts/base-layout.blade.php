@@ -114,6 +114,17 @@
                         <a href="{{URL::to('absolwenci')}}">absolwenci kursu</a></li>
                     <li class="{{ Request::is('kontakt') ? 'active sub-menu' : '' }}">
                         <a href="{{URL::to('kontakt')}}">kontakt</a></li>
+                    @if(Auth::user())
+                        {{--<li class="{{ Request::is('filmy') ? 'active sub-menu' : '' }}">--}}
+                        {{--<a href="{{URL::to('filmy')}}">filmy</a></li>--}}
+                        <li class="{{ Request::is('forum') ? 'active sub-menu' : '' }}">
+                            <a href="{{URL::to('forum')}}">forum</a></li>
+                        <li class="{{ Request::is('logout') ? 'active sub-menu' : '' }}">
+                            <a href="{{URL::to('logout')}}">wyloguj użytkownika {{ Auth::user()->name }}</a></li>
+                    @else
+                        <li class="{{ Request::is('login') ? 'active sub-menu' : '' }}">
+                            <a href="{{URL::to('login')}}">zaloguj się</a></li>
+                    @endif
                 </ul>
             </nav>
         </div>
