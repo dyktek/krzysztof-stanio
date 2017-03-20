@@ -68,10 +68,10 @@ function fullMonth($post)
     return $fullMonth;
 }
 
-function commentsNumber($post)
+function commentsNumber($chatterPosts)
 {
-    $commentsNumber = DB::table('comments')
-        ->where('posts_id', '=', $post['id'])
+    $commentsNumber = DB::table('chatter_post')
+        ->where('chatter_discussion_id', '=', $chatterPosts['chatter_discussion_id'])
         ->count();
     return $commentsNumber;
 }

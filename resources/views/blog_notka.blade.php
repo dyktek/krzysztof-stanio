@@ -15,6 +15,7 @@
                         <div class="extra-wrap">
                             <div>
                                 <div class="badge">
+
                                     {!! polDay($posts) !!}
                                     <span>{!! polMonth($posts) !!}</span>
                                     <strong>{!! commentsNumber($posts) !!}<img src="/img/page2_icon1.png"
@@ -28,9 +29,17 @@
                             </p>
                             <p> {!!$posts['body']!!}</p>
                         </div>
-                    </div>
-                </div>
+                            <h2 class="center indent">dyskusja</h2>
 
+                            <?php if (isset($chatterPosts)) { ?>
+                            @include('chatter_comments')
+                            <?php } else { ?>
+                            <p>Ten wpis nie został jeszcze skomentowany.</p>
+                            <p>Zapraszam na <a href="/forum">forum.</a></p>
+                        </div>
+                        <?php } ?>
+
+                </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 thumb-box4">
                     <h2 class="center indent">Kategorie wpisów</h2>
                     <ul class="list1-1 indent">
@@ -53,12 +62,13 @@
                         @endforeach
                     </ul>
                 </div>
+
             </div>
             @if( Session::has('message') )
                 <p class="alert alert-info">{{ Session::get('message') }}</p>
             @endif
 
-           
+        </div>
     </div>
-    </div>
+
 @endsection

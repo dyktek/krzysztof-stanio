@@ -16,6 +16,14 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\URL;
+use DevDojo\Chatter\Events\ChatterAfterNewResponse;
+use DevDojo\Chatter\Events\ChatterBeforeNewResponse;
+use DevDojo\Chatter\Mail\ChatterDiscussionUpdated;
+use DevDojo\Chatter\Models\Models;
+use Event;
+use Illuminate\Routing\Controller as Controller;
+use Illuminate\Support\Facades\Mail;
+use Validator;
 
 class PostController extends Controller
 {
@@ -55,42 +63,38 @@ class PostController extends Controller
 
         $categories = Categories::all();
 
-        $postsId = Post::select('id')->where('slug', $slug)->first();
-
-        $comments = Comments::where('posts_id', $postsId['id'])->orderBy('id', 'ASC')->get();
-
         $postModel = new Post();
         $postsByDates = $postModel->archive();
 
-        $commentsNumber = count($comments);
-
-        $commentsTmp = [];
-
-        foreach ($comments as $comment) {
-            if ($comment['parent'] == 0) {
-                $commentsTmp[$comment['id']]['main'] = $comment;
-            }
-            if ($comment['parent'] != 0) {
-                $commentsTmp[$comment['parent']]['child'][] = $comment;
-            }
-        }
-
         $fiveLastPosts = Post::orderBy('id', 'desc')->take(5)->get();
 
-        return view('blog_notka',
-            ['posts' => $posts,
-            'categories' => $categories,
-            'comments' => $commentsTmp,
-            'postsByDates' => $postsByDates,
-            'commentsNumber' => $commentsNumber,
-            'fiveLastPosts' => $fiveLastPosts]);
+        $discussion = Models::discussion()->where('title', '=', $posts['title'])->first();
+
+        if ($discussion) {
+            $chatterPosts = Models::post()->with('user')->where('chatter_discussion_id', '=', $discussion->id)->orderBy('created_at', 'ASC')->take(4)->get();
+        }
+
+        if (!$discussion) {
+            return view('blog_notka',
+                ['posts' => $posts,
+                    'categories' => $categories,
+                    'postsByDates' => $postsByDates,
+                    'fiveLastPosts' => $fiveLastPosts,
+
+                ]);} else { return view('blog_notka',
+                ['posts' => $posts,
+                    'categories' => $categories,
+                    'postsByDates' => $postsByDates,
+                    'fiveLastPosts' => $fiveLastPosts,
+                    'discussion' => $discussion,
+                    'chatterPosts' => $chatterPosts,
+                ]);
+        }
     }
 
     //wyswietlanie notek po kategorii
     public function byCategory($slug)
     {
-
-
 
         $categories = Categories::all();
 
@@ -140,6 +144,7 @@ class PostController extends Controller
             'fiveLastPosts' => $fiveLastPosts]);
     }
 
+    // TODO: remove:
     //zapisywanie komentarzy
     public function store(CreateCommentRequest $commentRequest, $posts)
     {
