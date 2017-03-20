@@ -1,15 +1,11 @@
-<div id="chatter_header">
-    <div class="container">
-        <a class="back_btn" href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-back"></i></a>
-    </div>
-</div>
 <div class="container margin-top">
     <div class="row">
         <div class="col-md-12">
             <div class="conversation">
                 <ul class="discussions no-bg" style="display:block;">
                         @foreach($chatterPosts as $post)
-                            <li data-id="{{ $post->id }}" data-markdown="{{ $post->markdown }}">
+                        <div class="extra-wrap">
+                        <li data-id="{{ $post->id }}" data-markdown="{{ $post->markdown }}">
 		                		<span class="chatter_posts">
 					        		<div class="chatter_middle">
                                         <span class="chatter_middle_details"><b>Komentarz dodany przez {{ ucfirst($post->user->{Config::get('chatter.user.database_field_with_user_name')}) }}</b></a>

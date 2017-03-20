@@ -28,7 +28,6 @@
                                 <br>
                             </p>
                             <p> {!!$posts['body']!!}</p>
-                        </div>
                             <h2 class="center indent">dyskusja</h2>
 
                             <?php if (isset($chatterPosts)) { ?>
@@ -38,6 +37,8 @@
                             <p>Zapraszam na <a href="/forum">forum.</a></p>
                         </div>
                         <?php } ?>
+                        </div>
+
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 thumb-box4">
