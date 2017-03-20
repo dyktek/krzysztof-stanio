@@ -35,10 +35,9 @@
                             <?php } else { ?>
                             <p>Ten wpis nie został jeszcze skomentowany.</p>
                             <p>Zapraszam na <a href="/forum">forum.</a></p>
-                        </div>
                         <?php } ?>
                         </div>
-
+                    </div>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 thumb-box4">
