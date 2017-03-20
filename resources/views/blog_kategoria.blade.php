@@ -1,8 +1,10 @@
 @extends('layouts.base-layout')
 
-@section('pageTitle', 'Blog - przeglądanie po kategorii')
-@section('description','App. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
-@section('keywords', 'szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
+@section('pageTitle', $currentCategory)
+
+@section('description'){{$currentCategory}} - skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!@endsection
+
+@section('keywords'){{$currentCategory}}, szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper @endsection
 
 @section('content')
     <div class="global indent">
@@ -39,7 +41,7 @@
                     <h2 class="center indent">Kategorie wpisów</h2>
                     <ul class="list1-1 indent">
                         @foreach($categories as $category)
-                            <li><a href="/blog/kategoria/{{$category['name']}}">{{$category['name']}}</a></li>
+                            <li><a href="/blog/kategoria/{{$category['slug']}}">{{$category['name']}}</a></li>
                         @endforeach
                     </ul>
                     <h2 class="center indent">Najnowsze wpisy</h2>

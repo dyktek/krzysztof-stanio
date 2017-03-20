@@ -10,6 +10,7 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
     <meta name="dyktek" content="Krzysztof Stanio">
+    <meta name="google-site-verification" content="w9Etyfjo_bLHsvSyLIQdVQE8bXUdeBEO-rCVwXX_cDs" />
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -35,7 +36,7 @@
 <!--JS-->
 <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/formDialog.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/formDialog.js?12') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/superfish.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/jquery.easing.1.3.js') }}"></script>
@@ -107,8 +108,8 @@
                         <a href="{{URL::to('/')}}">start</a></li>
                     <li class="{{ Request::is('blog') || Request::is('blog/*') ? 'active sub-menu' : '' }}">
                         <a href="{{URL::to('blog')}}">blog</a></li>
-                    <li class="{{ Request::is('kurs') ? 'active sub-menu' : '' }}">
-                        <a href="{{URL::to('kurs')}}">kurs</a></li>
+                    <li class="{{ Request::is('kursy-programowania') ? 'active sub-menu' : '' }}">
+                        <a href="{{URL::to('kursy-programowania')}}">kursy programowania</a></li>
                     <li class="{{ Request::is('absolwenci') || Request::is('absolwent/*') ? 'active sub-menu' : '' }}">
                         <a href="{{URL::to('absolwenci')}}">absolwenci kursu</a></li>
                     <li class="{{ Request::is('kontakt') ? 'active sub-menu' : '' }}">
@@ -123,6 +124,10 @@
     <footer>
         <div class="container">
             <p>Krzysztof Stanio &copy; <em id="copyright-year"></em></p>
+
+            <p style="padding-left:10px;"><a title="Jak się uczyć programowania" href="http://krzysztof-stanio.pl/blog/notka/Jak-sie-uczyc-programowania-Jak-wygladaja-moje-kursy">Jak się uczyć programowania</a></p>
+            <p style="padding-left:10px;"><a title="Kurs laravel" href="http://krzysztof-stanio.pl/blog/kategoria/kurs-laravel">Kurs laravel</a></p>
+            <p style="padding-left:10px;"><a title="Szkolenia programistyczne" href="http://krzysztof-stanio.pl/kurs">Szkolenia programistyczne</a></p>
             <p class="foo_address">Ketlinga 1<br>32-020 Kraków</p>
         </div>
     </footer>

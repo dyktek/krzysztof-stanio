@@ -42,7 +42,7 @@
                     <h2 class="center indent">Kategorie wpisów</h2>
                     <ul class="list1-1 indent">
                         @foreach($categories as $category)
-                            <li><a href="/blog/kategoria/{{$category['name']}}">{{$category['name']}}</a></li>
+                            <li><a href="/blog/kategoria/{{$category['slug']}}">{{$category['name']}}</a></li>
                         @endforeach
                     </ul>
                     <h2 class="center indent">Archiwum wpisów</h2>

@@ -1,9 +1,9 @@
 @extends('layouts.base-layout')
 
 
-@section('pageTitle', 'Szkolenia programistyczne PHP, Krzysztof Stanio, Boot Camp 2017 - zostań z nami webdeveloperem')
-@section('description','Od zera do Webdeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
-@section('keywords', 'szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
+@section('pageTitle', 'Kursy programowania, Szkolenia programistyczne PHP, Krzysztof Stanio, Boot Camp 2017')
+@section('description','Kursy programowania - Od zera do Webdeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
+@section('keywords', 'kursy programowania, szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
 
 @section('livechat')
     @include('livechat')
@@ -52,8 +52,7 @@
         <div class="thumb-box2">
             <div class="container">
                 <h2 class="center">Absolwenci moich kursów</h2>
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque
-                    ligula sagittis faucibus eget quis lacus. <br>Suspendisse sodales sed orci ac feugiat. </p>
+                <p class="center"></p>
                 <div class="row">
                     @for ($i = 0; $i < 3; $i++)
                         <div class="col-lg-4 col-md-4 col-sm-4">

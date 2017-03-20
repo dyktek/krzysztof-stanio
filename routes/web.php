@@ -49,7 +49,7 @@ Route::get('blog/notka/{slug}', [
     'as' => 'posts',
 ]);
 
-Route::get('blog/kategoria/{name}', [
+Route::get('blog/kategoria/{slug}', [
     'uses' => 'PostController@byCategory',
     'as' => 'posts.kategoria',
 ]);
@@ -72,6 +72,10 @@ Route::get('absolwent/{id}', [
 
 //kurs
 Route::get('kurs', function () {
+    return view('szkolenia');
+});
+
+Route::get('kursy-programowania', function () {
     return view('szkolenia');
 });
 

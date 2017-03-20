@@ -87,25 +87,34 @@ class PostController extends Controller
     }
 
     //wyswietlanie notek po kategorii
-    public function byCategory($name)
+    public function byCategory($slug)
     {
+
+
+
         $categories = Categories::all();
+
+        $currentCategory = Categories::whereSlug($slug)->pluck('name');
 
         $categoriesModel = new Categories();
 
-        $postsByCategories = $categoriesModel->categories($name);
+        $postsByCategories = $categoriesModel->categories($slug);
+
+
 
         $postModel = new Post();
         $postsByDates = $postModel->archive();
 
         $fiveLastPosts = Post::orderBy('id', 'desc')->take(5)->get();
 
-        return view('blog_kategoria',
-            ['posts' => $postsByCategories,
+        return view('blog_kategoria',[
+            'posts' => $postsByCategories,
+            'currentCategory' => $currentCategory[0],
             'categories' => $categories,
             'postsByDates' => $postsByDates,
             'fiveLastPosts' => $fiveLastPosts,
-            'name' => $name]);
+            'slug' => $slug
+        ]);
     }
 
     //wyswietlanie notek po dacie

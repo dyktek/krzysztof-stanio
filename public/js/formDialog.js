@@ -26,7 +26,7 @@ function getCookie(name) {
 
 var myCookie = getCookie("okienko");
 
-if(activeWindow === "/" && myCookie === null || activeWindow === "/kurs" && myCookie === null ){
+if(activeWindow === "/kurs" && myCookie === null ){
     $(document).ready(function () {
 
         var isDialog = false;

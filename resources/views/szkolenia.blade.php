@@ -1,8 +1,8 @@
 @extends('layouts.base-layout')
 
-@section('pageTitle', 'Szkolenia programistyczne PHP, Krzysztof Stanio, Boot Camp 2017 - zostań z nami webdeveloperem')
-@section('description','Od zera do Webdeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
-@section('keywords', 'szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
+@section('pageTitle', 'Kursy programowania, Szkolenia programistyczne PHP, Krzysztof Stanio, Boot Camp 2017 - zostań z nami webdeveloperem')
+@section('description','Kursy programowania Od zera do Webdeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
+@section('keywords', 'Kursy programowania, szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
 
 @section('livechat')
     @include('livechat')
@@ -25,8 +25,8 @@
                                 wciąż brakuje programistów. Sami od lat zajmujemy się programowaniem, dlatego najlepiej
                                 znamy wymagania pracodawców i możemy odpowiednio ukierunkować uczestników szkolenia.
                             </li>
-                            <li>Dla uczestników szkolnia spoza Krakowa mamy przygotowane wygodne pokoje z możliwoscią
-                                noclegu :)
+                            <li><b style="color:green;">Dla uczestników szkolnia spoza Krakowa mamy przygotowane wygodne pokoje z możliwoscią
+                                noclegu :)</b>
                             </li>
 
                         </ul>
@@ -57,11 +57,12 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li> Start najbliższej edycji:<b>17 marca 2017</b></li>
+                            <li> Start najbliższej edycji: <b style="color:green;">25 maja 2017</b></li>
                             <li>Czas trwania:<b> 6 tygodni (edycja weekendowo-wieczorowa)</b></li>
                             <li>Liczba godzin:<b> 157 </b></li>
                             <li>Opłata za rezerwację:<b> 100 zł</b></li>
-                            <li>Całkowity koszt szkolenia:<b> 3000 zł</b></li>
+                            <li style="color:green;">Całkowity koszt szkolenia:<b> 4000 zł</b></li>
+                            <li><b>Możliwość płatności w 4 ratach po 1000zł</b></li>
                             <li>Jeśli masz pytania związane z ofertą, zadzwoń:<b> 535 001 087</b></li>
                         </ul>
                     </div>
@@ -152,6 +153,12 @@
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="container">
+        <h2 class="center indent"><br>Zobacz jak wygląda nasze biuro</h2>
+        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="Kursy programowania" src="https://www.youtube.com/embed/LU1zceBNT0g?wmode=opaque&amp;theme=dark" frameborder="0" allowfullscreen="" name="fitvid0"></iframe></div>
+        <br>
         </div>
     </div>
     </div>
