@@ -211,8 +211,8 @@ return [
     */
 
     'tinymce' => [
-        'toolbar' => 'bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image | undo redo | styleselect | charmap code',
-        'plugins' => 'link, image, code, charmap',
+        'toolbar' => 'bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image | undo redo | styleselect | codesample',
+        'plugins' => 'codesample link image',
 
     ],
 
