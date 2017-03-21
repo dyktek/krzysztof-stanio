@@ -1816,3 +1816,8 @@ div.reply {
 .last_entry img {
 	width: 100%
 }
+
+.chatter_custom{
+	clear:both;
+	white-space: pre-wrap;
+}

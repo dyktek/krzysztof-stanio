@@ -212,7 +212,7 @@ return [
 
     'tinymce' => [
         'toolbar' => 'bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image | undo redo | styleselect | codesample',
-        'plugins' => 'codesample link image',
+        'plugins' => 'codesample link image paste',
 
     ],
 
