@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                          <textarea class="form-control" name="excerpt">@if (isset($dataTypeContent->excerpt)){{ $dataTypeContent->excerpt }}@endif</textarea>
+                            <textarea class="form-control" name="excerpt">@if (isset($dataTypeContent->excerpt)){{ $dataTypeContent->excerpt }}@endif</textarea>
                         </div>
                     </div>
                 </div>
@@ -139,6 +139,38 @@
                                 <label for="name">Featured</label>
                                 <input type="checkbox" name="featured" @if(isset($dataTypeContent->featured) && $dataTypeContent->featured){{ 'checked="checked"' }}@endif>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- ### NEW CHATTER POST ### -->
+
+                    <div class="panel panel-bordered panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="icon wb-image"></i> New Chatter Post</h3>
+                            <div class="panel-actions">
+                                <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            @if(!isset($dataTypeContent->id))
+                                <div class="form-group">
+                                    <label for="name">Create new Chatter Post</label>
+                                    <input type="checkbox" name="new_post" @if(isset($dataTypeContent->newpost) && $dataTypeContent->newpost){{ 'checked="checked"' }}@endif>
+                                </div>
+
+                                <!--CHATTER CATEGORY -->
+                                <?php $categories = DevDojo\Chatter\Models\Models::category()->all(); ?>
+                                <select id="chatter_category_id" class="form-control" name="chatter_category_id">
+                                    <option value="">Select a Category</option>
+                                    @foreach($categories as $category)
+                                        @if(old('chatter_category_id') == $category->id)
+                                            <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
+                                        @else
+                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            @endif
                         </div>
                     </div>
 

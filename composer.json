@@ -9,8 +9,18 @@
         "laravel/framework": "5.3.*",
         "tcg/voyager": "^0.10.10",
         "laravelcollective/html": "^5.3",
-        "barryvdh/laravel-debugbar": "^2.3"
+        "barryvdh/laravel-debugbar": "^2.3",
+        "devdojo/chatter": "dev-master",
+        "graham-campbell/markdown": "^7.1"
     },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fwartner/chatter"
+        }
+    ],
+
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

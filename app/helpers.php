@@ -70,8 +70,24 @@ function fullMonth($post)
 
 function commentsNumber($post)
 {
-    $commentsNumber = DB::table('comments')
-        ->where('posts_id', '=', $post['id'])
+    $postQuery = DB::table('posts_to_comments')
+        ->select('chatter_id')
+        ->where('post_id', $post['id'])
+        ->first();
+
+    try {
+        $postId = $postQuery->chatter_id;
+    } catch (Exception $e) {
+        $postId = 0;
+    }
+
+    $commentsNumber = DB::table('chatter_post')
+        ->where('chatter_discussion_id', $postId)
         ->count();
+
+    if (!$commentsNumber) {
+        $commentsNumber = 0;
+    }
+
     return $commentsNumber;
 }
