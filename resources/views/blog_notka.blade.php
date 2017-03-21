@@ -28,8 +28,7 @@
                                 <br>
                             </p>
                             <p> {!!$posts['body']!!}</p>
-                            <h2 class="center indent">dyskusja</h2>
-
+                            <h2 class="center indent">Z dyskusji na forum...</h2>
                             <?php if (isset($chatterPosts)) { ?>
                             @include('chatter_comments')
                             <?php } else { ?>
