@@ -19,6 +19,7 @@ use TCG\Voyager\Voyager;
 use TCG\Voyager\Http\Controllers\VoyagerBreadController;
 use Illuminate\Support\Facades\Auth;
 use DevDojo\Chatter\Models\Models;
+use App\PostsToComments;
 
 class VoyagerController extends VoyagerBreadController
 {
@@ -39,6 +40,14 @@ class VoyagerController extends VoyagerBreadController
         $data = new $dataType->model_name();
         $this->insertUpdateData($request, $slug, $dataType->addRows, $data);
 
+        // add Post to Comment Relation
+        $id = $request->input('id');
+        $postToComments = new PostsToComments();
+        $postToComments->post_id = $id;
+        $postToComments->chatter_id = 0;
+        $postToComments->save();
+
+        //create new Chatter post when new_post is selected
         if ($request->new_post) {
 
             $request->request->add(['body_content' => strip_tags($request->body)]);
@@ -50,7 +59,7 @@ class VoyagerController extends VoyagerBreadController
             $incrementer = 1;
             $new_slug = $slug;
             while (isset($discussion_exists->id)) {
-                $new_slug = $slug.'-'.$incrementer;
+                $new_slug = $slug . '-' . $incrementer;
                 $discussion_exists = Models::discussion()->where('slug', '=', $new_slug)->first();
                 $incrementer += 1;
             }
@@ -60,11 +69,11 @@ class VoyagerController extends VoyagerBreadController
             }
 
             $new_discussion = [
-                'title'               => $request->title,
+                'title' => $request->title,
                 'chatter_category_id' => $request->chatter_category_id,
-                'user_id'             => Auth::user()->id,
-                'slug'                => $slug,
-                'color'               => '#64274D',
+                'user_id' => Auth::user()->id,
+                'slug' => $slug,
+                'color' => '#64274D',
             ];
 
             $category = Models::category()->find($request->chatter_category_id);
@@ -76,8 +85,8 @@ class VoyagerController extends VoyagerBreadController
 
             $new_post = [
                 'chatter_discussion_id' => $discussion->id,
-                'user_id'               => Auth::user()->id,
-                'body'                  => '<p>Tu dyskutujemy o wpisie '. $request->title.'</p>',
+                'user_id' => Auth::user()->id,
+                'body' => '<p>Tu dyskutujemy o wpisie ' . $request->title . '</p>',
             ];
 
             if (config('chatter.editor') == 'simplemde'):
@@ -89,8 +98,14 @@ class VoyagerController extends VoyagerBreadController
 
             $post = Models::post()->create($new_post);
 
-        }
+            // add Post to Comment Relation
+            $id = $request->input('id');
+            $postToComments = new PostsToComments();
+            $postToComments->post_id = $data['original']['id'];
+            $postToComments->chatter_id = $discussion->id;
+            $postToComments->save();
 
+        }
         return redirect()
             ->route("voyager.{$dataType->slug}.index")
             ->with([
