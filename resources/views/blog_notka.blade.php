@@ -33,8 +33,8 @@
                             @include('chatter_comments')
                             <?php } else { ?>
                             <p>Ten wpis nie został jeszcze skomentowany.</p>
-                            <p>Zapraszam na <a href="/forum">forum.</a></p>
-                        <?php } ?>
+                            <h2 class="center indent"><a href="/forum">Zapraszam na forum</a></h2>
+                            <?php } ?>
                         </div>
                     </div>
 

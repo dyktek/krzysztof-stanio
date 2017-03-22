@@ -11,5 +11,5 @@
 @endforeach
 <h2 class="center indent">
     <a href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.discussion') }}/
-{{ $discussion->category->slug }}/{{ $discussion->slug }}">ZObacz więcej na forum</a>
+{{ $discussion->category->slug }}/{{ $discussion->slug }}">Zobacz więcej na forum</a>
 </h2>
