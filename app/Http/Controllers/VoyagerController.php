@@ -101,8 +101,8 @@ class VoyagerController extends VoyagerBreadController
             // add Post to Comment Relation
             $id = $request->input('id');
             $postToComments = new PostsToComments();
-            $postToComments->post_id = $data['original']['id'];
             $postToComments->chatter_id = $discussion->id;
+            $postToComments->post_id = $data['original']['id'];
             $postToComments->save();
 
         }
