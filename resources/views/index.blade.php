@@ -40,7 +40,9 @@
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12 wow fadeInLeft">
                             <div class="last_entry">
-                            <figure><img src="/storage/{!! $posts[$i]['image'] !!}" alt=""></figure>
+                                <figure><a href = "/blog/notka/{!!$posts[$i]['slug']!!}">
+                                    <img src="/storage/{!! $posts[$i]['image'] !!}" alt=""></a>
+                                </figure>
                         </div>
                         </div>
                     </div>
