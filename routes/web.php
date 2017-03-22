@@ -141,3 +141,8 @@ Route::post('admin/posts', [
     'as' => 'voyager.posts.store',
     'uses' => 'VoyagerController@store',
 ]);
+
+Route::any('admin/posts/{id}/edit', [
+    'as' => 'voyager.posts.update',
+    'uses' => 'VoyagerController@update',
+]);
