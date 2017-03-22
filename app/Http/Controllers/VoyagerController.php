@@ -48,7 +48,7 @@ class VoyagerController extends VoyagerBreadController
         $postToComments->save();
 
         //create new Chatter post when new_post is selected
-        if (!$request->new_post) {
+        if ($request->new_post) {
 
             $request->request->add(['body_content' => strip_tags($request->body)]);
 
