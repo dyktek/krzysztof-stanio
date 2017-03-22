@@ -181,10 +181,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
-        GrahamCampbell\Markdown\MarkdownServiceProvider::class
-
-
-
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
     ],
 
     /*
@@ -236,7 +234,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class
+        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+        'NoCaptcha' => 'Anhskohbo\NoCaptcha\Facades\NoCaptcha'
 
     ],
 
