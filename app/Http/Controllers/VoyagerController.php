@@ -39,14 +39,7 @@ class VoyagerController extends VoyagerBreadController
 
         $data = new $dataType->model_name();
         $this->insertUpdateData($request, $slug, $dataType->addRows, $data);
-
-        // add Post to Comment Relation
-        $id = $request->input('id');
-        $postToComments = new PostsToComments();
-        $postToComments->post_id = $id;
-        $postToComments->chatter_id = 0;
-        $postToComments->save();
-
+        
         //create new Chatter post when new_post is selected
         if ($request->new_post) {
 
@@ -101,8 +94,8 @@ class VoyagerController extends VoyagerBreadController
             // add Post to Comment Relation
             $id = $request->input('id');
             $postToComments = new PostsToComments();
-            $postToComments->post_id = $data['original']['id'];
             $postToComments->chatter_id = $discussion->id;
+            $postToComments->post_id = $data['original']['id'];
             $postToComments->save();
 
         }

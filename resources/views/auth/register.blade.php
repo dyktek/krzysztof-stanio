@@ -1,7 +1,7 @@
 @extends('layouts.base-layout')
 
 @section('pageTitle', 'Dostęp')
-@section('description','App. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
+@section('description','Od zera do WebDeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
 @section('keywords', 'szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
 
 
@@ -61,6 +61,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
+                                        {!! app('captcha')->display(); !!}
                                         <button type="submit" class="btn-default btn1">
                                             Zarejestruj
                                         </button>
