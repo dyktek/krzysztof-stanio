@@ -141,3 +141,13 @@ Route::post('admin/posts', [
     'as' => 'voyager.posts.store',
     'uses' => 'VoyagerController@store',
 ]);
+
+Route::any('admin/bread/{id}/edit', [
+    'as' => 'voyager.posts.edit',
+    'uses' => 'VoyagerController@edit',
+]);
+
+Route::any('bread/{id}', [
+    'as' => 'voyager.posts.update',
+    'uses' => 'VoyagerController@update',
+]);
