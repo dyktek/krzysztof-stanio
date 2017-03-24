@@ -30,7 +30,7 @@ class PostController extends Controller
     //wyswietlanie 3 artykulow z bloga na stronie glownej i absolwentow (index)
     public function index()
     {
-        $posts = Post::orderBy('id', 'desc')->take(3)->get();
+        $posts = Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->take(3)->get();
 
         $graduates = Graduates::inRandomOrder()->take(4)->get();
 
@@ -42,7 +42,7 @@ class PostController extends Controller
     // wyswietlanie artykulow na podstronie blog
     public function blog_index()
     {
-        $posts = Post::orderBy('id', 'desc')->paginate(2);
+        $posts = Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(2);
 
         $categories = Categories::all();
 
@@ -109,7 +109,7 @@ class PostController extends Controller
         $postModel = new Post();
         $postsByDates = $postModel->archive();
 
-        $fiveLastPosts = Post::orderBy('id', 'desc')->take(5)->get();
+        $fiveLastPosts = Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->take(5)->get();
 
         return view('blog_kategoria',[
             'posts' => $postsByCategories,
@@ -124,7 +124,8 @@ class PostController extends Controller
     //wyswietlanie notek po dacie
     public function byDate($year, $month)
     {
-        $posts = Post::whereYear('created_at', '=', $year)
+        $posts = Post::where('status', 'PUBLISHED')
+            ->whereYear('created_at', '=', $year)
             ->whereMonth('created_at', '=', $month)
             ->orderBy('id', 'desc')
             ->get();
@@ -135,7 +136,7 @@ class PostController extends Controller
         $postsByDates = $postModel->archive();
         $postsByDates = json_decode($postsByDates, true);
 
-        $fiveLastPosts = Post::orderBy('id', 'desc')->take(5)->get();
+        $fiveLastPosts = Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->take(5)->get();
 
         return view('blog_archiwum',
             ['posts' => $posts,

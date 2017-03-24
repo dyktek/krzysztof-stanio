@@ -164,7 +164,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
-
         /*
          * Package Service Providers...
          */
@@ -182,7 +181,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
        // GrahamCampbell\Markdown\MarkdownServiceProvider::class
-        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class
     ],
 
     /*
@@ -230,8 +228,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         //'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class
