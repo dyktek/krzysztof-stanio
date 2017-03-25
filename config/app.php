@@ -137,6 +137,7 @@ return [
 
     'providers' => [
 
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -180,7 +181,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
-       // GrahamCampbell\Markdown\MarkdownServiceProvider::class
+       // GrahamCampbell\Markdown\MarkdownServiceProvider::class,
     ],
 
     /*
@@ -230,7 +231,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        //'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class
+        //'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 
 ];
