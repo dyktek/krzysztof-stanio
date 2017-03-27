@@ -1,7 +1,7 @@
 @extends(Config::get('chatter.master_file_extend'))
 
 @section('pageTitle') {{ $discussion->title }} @endsection
-@section('description','Kursy programowania - Od zera do Webdeva. Skorzystaj z naszego szkolenia i zdobądź umiejetności w dziedzinie programowania. Zapraszamy!')
+@section('description') {{mb_substr(strip_tags(html_entity_decode($posts[0]['body'])), 0, 159)}} @endsection
 @section('keywords', 'kursy programowania, szkolenia, PHP, JavaScript, CSS, HTML5, kursy programistyczne, szkolenia programistyczne, jak zostać programistą, Kraków, boot camp, Krzysztof Stanio, symfony, angular, laravel, webdeveloper')
 
 
@@ -18,7 +18,6 @@
         </style>
     @endif
 @stop
-
 
 @section('content')
 
