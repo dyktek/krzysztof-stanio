@@ -91,3 +91,16 @@ function commentsNumber($post)
 
     return $commentsNumber;
 }
+
+function chatterTitle($posts, $length)
+{
+    $text = $posts[0]['body'];
+    $text = preg_replace("/^(.{1,$length})(\s.*|$)/s", '\\1', $text);
+    $text = str_replace("<br />", "", $text);
+
+    if (mb_strlen($text) > $length) {
+        return $truncated = strip_tags(html_entity_decode(substr($text, 0, strrpos(substr($text, 0, 120), ' '))));
+    } else {
+        return strip_tags(html_entity_decode($text));
+    }
+}
