@@ -137,7 +137,7 @@
             <p style="padding-left:10px;"><a title="Jak się uczyć programowania" href="http://krzysztof-stanio.pl/blog/notka/Jak-sie-uczyc-programowania-Jak-wygladaja-moje-kursy">Jak się uczyć programowania</a></p>
             <p style="padding-left:10px;"><a title="Kurs laravel" href="http://krzysztof-stanio.pl/blog/kategoria/kurs-laravel">Kurs laravel</a></p>
             <p style="padding-left:10px;"><a title="Szkolenia programistyczne" href="http://krzysztof-stanio.pl/kurs">Szkolenia programistyczne</a></p>
-            <p class="foo_address">Ketlinga 1<br>32-020 Kraków</p>
+            <p class="foo_address">Ketlinga 1<br>30-389 Kraków</p>
         </div>
     </footer>
 
