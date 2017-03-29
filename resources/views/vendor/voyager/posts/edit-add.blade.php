@@ -152,7 +152,9 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            @if(!isset($dataTypeContent->id))
+
+
+                            @if(!isset($discussion_exists))
                                 <div class="form-group">
                                     <label for="name">Create new Chatter Post</label>
                                     <input type="checkbox" name="new_post" @if(isset($dataTypeContent->newpost) && $dataTypeContent->newpost){{ 'checked="checked"' }}@endif>
