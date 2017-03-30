@@ -174,14 +174,14 @@
         </div>
 
 
-        <div class="thumb-box9">
+        <div class="thumb-box9" id="zgloszenie">
             <div class="container">
                 <h2 class="wow fadeInUp">Formularz zgłoszeniowy</h2>
                 <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu? Chcesz zarezerwować miejsce?</p>
             <p>Wypełnij poniższy formularz - na adres e-mail prześlemy Ci szczegółowe informacje
                 na temat warunków uczestnictwa w kursie oraz opłat.</p>
 
-                <div class="row" id="zgloszenie">
+                <div class="row">
                     <div class="col-lg-12 wow fadeInUp">
 
                         {!! Form::open(['method' => 'POST',
