@@ -215,7 +215,7 @@
 
                         {{ Form::checkbox('regulamin', 1, null, ['id'=>'regulamin', 'class' => 'training']) }}
 
-                        <label for="regulamin">Oświadczam, że zapoznałem/łam się z </label><b><a href="javascript:window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></a></b>
+                        <label for="regulamin">Oświadczam, że zapoznałem/łam się z </label><b><a href="#zgloszenie" onclick="window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></b>
 
                         <div style="color:red">
                             @if($errors->has('regulamin'))
