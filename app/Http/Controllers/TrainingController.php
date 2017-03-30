@@ -30,7 +30,7 @@ class TrainingController extends Controller
             'nazwisko' => 'required|string',
             'telefon' => 'required|string',
             'e-mail' => 'required|email',
-            'zasady' => 'accepted',
+            'regulamin' => 'accepted',
         ]);
         if ($validator->fails()) {
             return redirect('/kursy-programowania/#zgloszenie')->withErrors($validator)->withInput();

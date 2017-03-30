@@ -213,13 +213,13 @@
                             @endif
                         </div>
 
-                        {{ Form::checkbox('zasady', 1, null, ['id'=>'zasady', 'class' => 'newsletter']) }}
+                        {{ Form::checkbox('regulamin', 1, null, ['id'=>'regulamin', 'class' => 'training']) }}
 
-                        <label for="zasady">Oświadczam, że zapoznałem/łam się z </label><b><a href="javascript:window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></a></b>
+                        <label for="regulamin">Oświadczam, że zapoznałem/łam się z </label><b><a href="javascript:window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></a></b>
 
                         <div style="color:red">
-                            @if($errors->has('zasady'))
-                                {{ $errors->first('zasady')}}
+                            @if($errors->has('regulamin'))
+                                {{ $errors->first('regulamin')}}
                             @endif
                         </div>
                         <br><br>
