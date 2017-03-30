@@ -189,7 +189,7 @@
                           'id' => 'training']) !!}
                         <br>
 
-                        {!! Form::text('nazwisko', 'Imię i nazwisko', array()) !!}
+                        {!! Form::text('nazwisko', '', array('placeholder' => 'Imię i nazwisko')) !!}
                         <div style="color:red">
                             @if($errors->has('nazwisko'))
                                 {{ $errors->first('nazwisko')}}
@@ -197,7 +197,7 @@
                             @endif
                         </div>
 
-                        {!! Form::text('telefon', 'numer telefonu', array()) !!}
+                        {!! Form::text('telefon', '', array('placeholder' => 'numer telefonu')) !!}
                         <div style="color:red">
                             @if($errors->has('telefon'))
                                 {{ $errors->first('telefon')}}
@@ -205,7 +205,7 @@
                             @endif
                         </div>
 
-                        {!! Form::email('e-mail', 'e-mail', array())  !!}
+                        {!! Form::email('e-mail', '', array('placeholder' => 'e-mail'))  !!}
                         <div style="color:red">
                             @if($errors->has('e-mail'))
                                 {{ $errors->first('e-mail')}}
