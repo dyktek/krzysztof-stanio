@@ -7,7 +7,6 @@
 @section('livechat')
     @include('livechat')
 @endsection
-
 @section('content')
     <div class="global indent">
         <!--content-->
@@ -25,8 +24,9 @@
                                 wciąż brakuje programistów. Sami od lat zajmujemy się programowaniem, dlatego najlepiej
                                 znamy wymagania pracodawców i możemy odpowiednio ukierunkować uczestników szkolenia.
                             </li>
-                            <li><b style="color:green;">Dla uczestników szkolnia spoza Krakowa mamy przygotowane wygodne pokoje z możliwoscią
-                                noclegu :)</b>
+                            <li><b style="color:green;">Dla uczestników szkolnia spoza Krakowa mamy przygotowane wygodne
+                                    pokoje z możliwoscią
+                                    noclegu :)</b>
                             </li>
 
                         </ul>
@@ -71,6 +71,7 @@
                             <li>Harmonogram weekendowego zjazdu:
                                 <b><br> piątek 18:00-22:00 <br> sobota 10:00-19:00 <br> niedziela 10:00-19:00 </b></li>
                         </ul>
+                        <a href=#zgloszenie class="btn-default btn1">Zgłoś się na szkolenie</a>
                     </div>
                 </div>
             </div>
@@ -155,12 +156,83 @@
             </div>
         </div>
 
-        <div class="container">
-        <h2 class="center indent"><br>Zobacz jak wygląda nasze biuro</h2>
-        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="Kursy programowania" src="https://www.youtube.com/embed/LU1zceBNT0g?wmode=opaque&amp;theme=dark" frameborder="0" allowfullscreen="" name="fitvid0"></iframe></div>
-        <br>
+        <div class="global2">
+            <!--content-->
+            <div class="thumb-box2 center">
+                <div class="container">
+                    <br>
+                    <h2 class="center">Zobacz jak wygląda nasze biuro</h2>
+                    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
+                        <iframe title="Kursy programowania"
+                                src="https://www.youtube.com/embed/LU1zceBNT0g?wmode=opaque&amp;theme=dark"
+                                frameborder="0"
+                                allowfullscreen="" name="fitvid0"></iframe>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
+
+
+        <div class="thumb-box9">
+            <div class="container">
+                <h2 class="wow fadeInUp">Formularz zgłoszeniowy</h2>
+                <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu? Chcesz zarezerwować miejsce?</p>
+            <p>Wypełnij poniższy formularz - na adres e-mail prześlemy Ci szczegółowe informacje
+                na temat warunków uczestnictwa w kursie oraz opłat.</p>
+
+                <div class="row" id="zgloszenie">
+                    <div class="col-lg-12 wow fadeInUp">
+
+                        {!! Form::open(['method' => 'POST',
+                         'route' => 'training.sendEmail',
+                          'id' => 'training']) !!}
+                        <br>
+
+                        {!! Form::text('nazwisko', 'Imię i nazwisko', array()) !!}
+                        <div style="color:red">
+                            @if($errors->has('nazwisko'))
+                                {{ $errors->first('nazwisko')}}
+                                <br><br>
+                            @endif
+                        </div>
+
+                        {!! Form::text('telefon', 'numer telefonu', array()) !!}
+                        <div style="color:red">
+                            @if($errors->has('telefon'))
+                                {{ $errors->first('telefon')}}
+                                <br><br>
+                            @endif
+                        </div>
+
+                        {!! Form::email('e-mail', 'e-mail', array())  !!}
+                        <div style="color:red">
+                            @if($errors->has('e-mail'))
+                                {{ $errors->first('e-mail')}}
+                                <br><br>
+                            @endif
+                        </div>
+
+                        {{ Form::checkbox('zasady', 1, null, ['id'=>'zasady', 'class' => 'newsletter']) }}
+
+                        <label for="zasady">Oświadczam, że zapoznałem/łam się z </label><b><a href="javascript:window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></a></b>
+
+                        <div style="color:red">
+                            @if($errors->has('zasady'))
+                                {{ $errors->first('zasady')}}
+                            @endif
+                        </div>
+                        <br><br>
+
+                        {!! Form::submit('Wyślij!', array()) !!}
+
+                        {!! Form::close() !!}
+                    </div>
+                    <h2 class="wow fadeInUp">{{ Session::get('message') }}</h2>
+                </div>
+            </div>
+        </div>
+
+
+
 @endsection

@@ -101,7 +101,7 @@
                 <p class="wow fadeInUp">Jeżeli chcesz otrzymywać powiadomienia o najnowszych wpisach, kursach - wpisz
                     swój adres e-mail.</p>
 
-                <div class="row" id="newsletter">
+                <div class="row" id="training">
                     <div class="col-lg-12 wow fadeInUp">
 
                         {!! Form::open(['method' => 'POST',
