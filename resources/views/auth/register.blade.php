@@ -61,7 +61,8 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
-                                        {!! app('captcha')->display(); !!}
+                                        {{--<div class="g-recaptcha" data-sitekey="6LcHABoUAAAAAFaJsyccXzLUd1jkFrkaJ6fraUBq"></div>--}}
+                                        {!! Recaptcha::render(['lang' => 'pl']) !!}
                                         <button type="submit" class="btn-default btn1">
                                             Zarejestruj
                                         </button>

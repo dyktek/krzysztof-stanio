@@ -56,7 +56,6 @@
                                         <button type="submit" class="btn-default btn1">
                                             Zaloguj
                                         </button>
-
                                         <a class="btn btn-link" href="{{ url('/password/reset') }}">
                                             Zapomniałeś hasła?
                                         </a>

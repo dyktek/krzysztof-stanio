@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pl',
 
     /*
     |--------------------------------------------------------------------------
@@ -137,6 +137,7 @@ return [
 
     'providers' => [
 
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -164,7 +165,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
-
         /*
          * Package Service Providers...
          */
@@ -181,8 +181,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
-        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
-        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+       // GrahamCampbell\Markdown\MarkdownServiceProvider::class,
     ],
 
     /*
@@ -232,11 +231,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,
-        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
-        'NoCaptcha' => 'Anhskohbo\NoCaptcha\Facades\NoCaptcha'
-
+        //'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 
 ];
