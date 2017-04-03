@@ -176,59 +176,53 @@
 
         <div class="thumb-box9" id="zgloszenie">
             <div class="container">
-                <h2 class="wow fadeInUp">Formularz zgłoszeniowy</h2>
-                <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu? Chcesz zarezerwować miejsce?</p>
-            <p>Wypełnij poniższy formularz - na adres e-mail prześlemy Ci szczegółowe informacje
-                na temat warunków uczestnictwa w kursie oraz opłat.</p>
-
                 <div class="row">
-                    <div class="col-lg-12 wow fadeInUp">
-
-                        {!! Form::open(['method' => 'POST',
-                         'route' => 'training.sendEmail',
-                          'id' => 'training']) !!}
-                        <br>
-
-                        {!! Form::text('nazwisko', '', array('placeholder' => 'Imię i nazwisko')) !!}
-                        <div style="color:red">
-                            @if($errors->has('nazwisko'))
-                                {{ $errors->first('nazwisko')}}
-                                <br><br>
-                            @endif
+                    @if (Session::has('message'))
+                        <h2 class="wow fadeInUp">{{ Session::get('message') }}</h2>
+                    @else
+                        <h2 class="wow fadeInUp">Formularz zgłoszeniowy</h2>
+                        <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu? Chcesz zarezerwować
+                            miejsce?</p>
+                        <p>Wypełnij poniższy formularz - na adres e-mail prześlemy Ci szczegółowe informacje
+                            na temat warunków uczestnictwa w kursie oraz opłat.</p>
+                        <div class="col-lg-12 wow fadeInUp">
+                            {!! Form::open(['method' => 'POST',
+                             'route' => 'training.sendEmail',
+                              'id' => 'training']) !!}
+                            <br>
+                            {!! Form::text('nazwisko', '', array('placeholder' => 'Imię i nazwisko')) !!}
+                            <div style="color:red">
+                                @if($errors->has('nazwisko'))
+                                    {{ $errors->first('nazwisko')}}
+                                    <br><br>
+                                @endif
+                            </div>
+                            {!! Form::text('telefon', '', array('placeholder' => 'numer telefonu')) !!}
+                            <div style="color:red">
+                                @if($errors->has('telefon'))
+                                    {{ $errors->first('telefon')}}
+                                    <br><br>
+                                @endif
+                            </div>
+                            {!! Form::email('e-mail', '', array('placeholder' => 'e-mail'))  !!}
+                            <div style="color:red">
+                                @if($errors->has('e-mail'))
+                                    {{ $errors->first('e-mail')}}
+                                    <br><br>
+                                @endif
+                            </div>
+                            {{ Form::checkbox('regulamin', 1, null, ['id'=>'regulamin', 'class' => 'training']) }}
+                            <b>Oświadczam, że zapoznałem/łam się z <a href="/regulamin" target="_blank">regulaminem</a></b>
+                            <div style="color:red">
+                                @if($errors->has('regulamin'))
+                                    {{ $errors->first('regulamin')}}
+                                @endif
+                            </div>
+                            <br><br>
+                            {!! Form::submit('Wyślij!', array()) !!}
+                            {!! Form::close() !!}
                         </div>
-
-                        {!! Form::text('telefon', '', array('placeholder' => 'numer telefonu')) !!}
-                        <div style="color:red">
-                            @if($errors->has('telefon'))
-                                {{ $errors->first('telefon')}}
-                                <br><br>
-                            @endif
-                        </div>
-
-                        {!! Form::email('e-mail', '', array('placeholder' => 'e-mail'))  !!}
-                        <div style="color:red">
-                            @if($errors->has('e-mail'))
-                                {{ $errors->first('e-mail')}}
-                                <br><br>
-                            @endif
-                        </div>
-
-                        {{ Form::checkbox('regulamin', 1, null, ['id'=>'regulamin', 'class' => 'training']) }}
-
-                        <label for="regulamin">Oświadczam, że zapoznałem/łam się z </label><b><a href="#zgloszenie" onclick="window.open('/regulamin','Regulamin','width=500,height=730')"> regulaminem</a></b>
-
-                        <div style="color:red">
-                            @if($errors->has('regulamin'))
-                                {{ $errors->first('regulamin')}}
-                            @endif
-                        </div>
-                        <br><br>
-
-                        {!! Form::submit('Wyślij!', array()) !!}
-
-                        {!! Form::close() !!}
-                    </div>
-                    <h2 class="wow fadeInUp">{{ Session::get('message') }}</h2>
+                    @endif
                 </div>
             </div>
         </div>
