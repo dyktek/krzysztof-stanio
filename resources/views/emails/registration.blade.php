@@ -12,5 +12,5 @@ Krzysztof Stanio Dyktek
 
 W razie pytań pozostajemy do Twojej dyspozycji pod numerem telefonu +48 535 001 087. Możesz też do nas napisać:
 <a href="mailto: kontakt@krzysztof-stanio.pl">kontakt@krzysztof-stanio.pl</a>.
-Pozdrawiamy, zespół <a href="">App</a>
+Pozdrawiamy, zespół Od zera do WebDeva
 

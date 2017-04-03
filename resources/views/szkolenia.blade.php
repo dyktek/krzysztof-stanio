@@ -212,7 +212,8 @@
                                 @endif
                             </div>
                             {{ Form::checkbox('regulamin', 1, null, ['id'=>'regulamin', 'class' => 'training']) }}
-                            <b>Oświadczam, że zapoznałem/łam się z <a href="/regulamin" target="_blank">regulaminem</a></b>
+                            <label for="regulamin">Oświadczam, że zapoznałem/łam się z </label><b> <a href="/regulamin" target="_blank">regulaminem</a></b>
+
                             <div style="color:red">
                                 @if($errors->has('regulamin'))
                                     {{ $errors->first('regulamin')}}
