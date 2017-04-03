@@ -7,7 +7,7 @@ Musisz jednak liczyć się z tym, że kurs to nie wszystko - czeka Cię dużo sa
 to nauka, która się nie kończy :-)<br><br>
 
 Zajęcia prowadzone są w formie bootcampa - wraz z innymi uczestnikami przez 6 tygodni będziesz wykonywał różne zadania, zgodnie z programem
-zamieszczonym na <a href="/kursy-programowania" target="_blank">tej stronie</a>.
+zamieszczonym na <a href="http://krzysztof-stanio.pl/kursy-programowania" target="_blank">tej stronie</a>.
 Konieczne będzie przyniesienie własnego laptopa, który skonfigurujemy razem, na indywidualnym spotkaniu przed kursem.
 
 Wszystkie zajęcia prowadzone będą w Krakowie w naszym biurze przy ul. Ketlinga 1.
