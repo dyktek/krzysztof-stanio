@@ -11,16 +11,13 @@ zamieszczonym na <a href="http://krzysztof-stanio.pl/kursy-programowania" target
 Konieczne będzie przyniesienie własnego laptopa, który skonfigurujemy razem, na indywidualnym spotkaniu przed kursem.
 
 Wszystkie zajęcia prowadzone będą w Krakowie w naszym biurze przy ul. Ketlinga 1.
-W pobliżu można zaparkować samochodem, możliwy jest też dojazd komunikacją miejską liniami: 151, 178, 451. Budynek to domek zaadaptowany na biuro - przestronny, klimatyzowany. Do dyspozycji uczestników pozostaje wyposażona kuchnia i kilka łazienek.
-Osoby które są z daleka lub nie chcą tracić czasu na dojazd mogą bezpłatne nocować na górnych piętrach budynku, specjalnie do tego dostosowanych, co można zobaczyć na poniższym filmie:
-<br>
-<iframe src="https://www.youtube.com/embed/LU1zceBNT0g?wmode=opaque&amp;theme=dark"></iframe>
-<br>
+W pobliżu można zaparkować samochodem, możliwy jest też dojazd komunikacją miejską liniami: 151, 178, 451. Budynek to domek zaadaptowany na biuro - przestronny i klimatyzowany. Do dyspozycji uczestników pozostaje wyposażona kuchnia i kilka łazienek.
+Osoby które są z daleka lub nie chcą tracić czasu na dojazd mogą bezpłatne nocować na górnych piętrach budynku, specjalnie do tego dostosowanych.
 
 Aby zarezerwować miejsce na kursie, konieczna jest wpłata opłaty rezerwacyjnej.
 <br><br>
 Dane do przelewu:<br>
-<b>Odbiorca:</b>Krzysztof Stanio Dyktek<br>
+<b>Odbiorca:</b> Krzysztof Stanio Dyktek<br>
 <b>Numer konta:</b> 52 1140 2004 0000 3102 7515 5010<br>
 <b>Tytuł wpłaty:</b> Szkolenie PHP 09<br>
 <b>Kwota:</b> 100 zł<br>
