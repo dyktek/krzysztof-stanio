@@ -71,13 +71,14 @@ Route::get('absolwent/{id}', [
 ]);
 
 //kurs
-Route::get('kurs', function () {
-    return view('szkolenia');
-});
-
 Route::get('kursy-programowania', function () {
     return view('szkolenia');
 });
+
+Route::get('regulamin', [
+    'uses' => 'TrainingController@regulamin',
+    'as' => 'regulamin',
+]);
 
 //formularz kontaktowy
 Route::get('kontakt', [
@@ -135,8 +136,13 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-// napisanie routingu voyagera - custom controller tworzy notke i wpis na forum
+// wysłanie e-maila po wysłaniu formularza zgłoszeniowego
+Route::post('send', [
+    'uses' => 'TrainingController@send',
+    'as' => 'training.sendEmail',
+]);
 
+// napisanie routingu voyagera - custom controller tworzy notke i wpis na forum
 Route::post('admin/posts', [
     'as' => 'voyager.posts.store',
     'uses' => 'VoyagerController@store',

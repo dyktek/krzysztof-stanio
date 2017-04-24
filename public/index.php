@@ -1,4 +1,5 @@
 <?php
+header('S-Host: ' . $_SERVER['HTTP_HOST']);
 
 header('S-Host: ' . $_SERVER['HTTP_HOST']);
 
