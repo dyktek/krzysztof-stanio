@@ -16,7 +16,6 @@ class TrainingController extends Controller
     {
         $regulamin = Page::where('title', 'REGULAMIN')->orderBy('id', 'desc')->first();
 
-
         return view('regulamin',
             ['regulamin' => $regulamin]);
     }
@@ -24,7 +23,6 @@ class TrainingController extends Controller
 
     public function send(Request $request)
     {
-
 
         $validator = Validator::make($request->all(), [
             'nazwisko' => 'required|string',

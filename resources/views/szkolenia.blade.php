@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li> Start najbliższej edycji: <b style="color:green;">25 maja 2017</b></li>
+                            <li> Start najbliższej edycji: <b style="color:green;">26 maja 2017</b></li>
                             <li>Czas trwania:<b> 6 tygodni (edycja weekendowo-wieczorowa)</b></li>
                             <li>Liczba godzin:<b> 157 </b></li>
                             <li>Opłata za rezerwację:<b> 100 zł</b></li>
