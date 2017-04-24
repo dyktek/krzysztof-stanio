@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Od Zera do WebDeva - zgłoszenie na kurs</title>
-
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 </head>
 <style>
@@ -67,8 +65,7 @@
     <b>NIP: </b>8133197081<br>
     <b>Adres: </b>ul. Ketlinga 1, 32-020 Kraków<br>
     <br><br>
-
-
+    
     W razie pytań pozostajemy do Twojej dyspozycji pod numerem telefonu <b>+48 535 001 087</b>.<br>
     Możesz też do nas napisać:
     <a href="mailto: kontakt@krzysztof-stanio.pl">kontakt@krzysztof-stanio.pl</a>.
