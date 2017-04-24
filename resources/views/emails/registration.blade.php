@@ -1,6 +1,12 @@
-<img class="logo" src="/img/logo.png"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Od Zera do WebDeva - zgłoszenie na kurs</title>
+</head>
+<body bgcolor="#f2f2f2">
+<img class="logo" src="http://krzysztof-stanio.pl/img/logo.png" align="middle"></p>
 <h2>Dzień dobry!</h2>
-<v></v>
 Dziękujemy za zainteresowanie naszym kursem.<br>
 Najbliższa edycja zacznie się <b>26 maja 2017 r.</b> i będzie trwała 6 tygodni.<br><br>
 Podczas 157-godzinnego kursu zdobędziesz solidne podstawy, które pomogą Ci rozwijać karierę webdevelopera.
@@ -29,4 +35,5 @@ Możesz też do nas napisać:
 <a href="mailto: kontakt@krzysztof-stanio.pl">kontakt@krzysztof-stanio.pl</a>.
 <br><br>
 Pozdrawiamy, zespół Od zera do WebDeva
-
+</body>
+</html>
