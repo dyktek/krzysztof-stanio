@@ -1821,3 +1821,48 @@ div.reply {
 	clear:both;
 	white-space: pre-wrap;
 }
+
+.thumb-box9 {
+	position: relative;
+	overflow: hidden;
+	padding: 62px 0 67px 0;
+	text-align: center;
+	background: #555a78 url(../img/triangle.png) center top no-repeat;
+}
+
+.thumb-box9 h2 {
+	color: #ffffff;
+}
+.thumb-box9 p {
+	color: #c5c7d1;
+}
+
+#training input {
+	background: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: 1px solid #ffffff;
+	font: bold 13px/18px 'Open Sans';
+	text-transform: uppercase;
+	color: #969696;
+	text-align: center;
+	background: #ffffff;
+	height: 48px;
+	width: 570px;
+	padding: 14px;
+	margin: 0 0 35px 0;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+
+#training [type="checkbox"] {
+	height: 15px;
+	width: 20px;
+	padding: 0px;
+
+}
+
+#training [type="label"] {
+	height: 48px;
+	width: 100%;
+}
