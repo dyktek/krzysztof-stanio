@@ -1,7 +1,8 @@
-Dzień dobry!<br><br>
-
+<img class="logo" src="/img/logo.png"></p>
+<h2>Dzień dobry!</h2>
+<v></v>
 Dziękujemy za zainteresowanie naszym kursem.<br>
-Najbliższa edycja zacznie się <b>25 maja 2017 r.</b> i będzie trwała 6 tygodni.<br><br>
+Najbliższa edycja zacznie się <b>26 maja 2017 r.</b> i będzie trwała 6 tygodni.<br><br>
 Podczas 157-godzinnego kursu zdobędziesz solidne podstawy, które pomogą Ci rozwijać karierę webdevelopera.
 Musisz jednak liczyć się z tym, że kurs to nie wszystko - czeka Cię dużo samodzielnej pracy, a kariera programisty
 to nauka, która się nie kończy :-)<br><br>
