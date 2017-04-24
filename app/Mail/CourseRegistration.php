@@ -33,9 +33,7 @@ class CourseRegistration extends Mailable
         $subject = 'Zgłoszenie na szkolenie';
 
         return $this->view('emails.registration')
-            ->subject($subject)
-            ->with([
-                '$who' => $this->who]);
+            ->subject($subject);
     }
 }
 

@@ -35,7 +35,7 @@
 
 <body>
 <img class="logo" src="https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/12068870_1503802496610316_5806512324136392188_o.jpg?oh=37d16246f9d63bce91e6dfc30c4152ef&oe=5980965F"></p>
-<h2>Dzień dobry {{ $who }}!</h2>
+<h2>Dzień dobry!</h2>
 <div class="email">
     Dziękujemy za zainteresowanie naszym kursem.<br>
     Najbliższa edycja zacznie się <b>26 maja 2017 r.</b> i będzie trwała 6 tygodni.<br><br>
