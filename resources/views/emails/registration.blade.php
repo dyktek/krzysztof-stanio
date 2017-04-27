@@ -16,12 +16,12 @@
     to nauka, która się nie kończy :-)<br><br>
 
     Zajęcia prowadzone są w formie bootcampa - wraz z innymi uczestnikami przez 6 tygodni będziesz wykonywał różne zadania, zgodnie z programem
-    zamieszczonym na <a href="http://krzysztof-stanio.pl/kursy-programowania" target="_blank">tej stronie</a>.
-    Konieczne będzie przyniesienie własnego laptopa, który skonfigurujemy razem, na indywidualnym spotkaniu przed kursem.
+    zamieszczonym na <a href="http://krzysztof-stanio.pl/kursy-programowania" target="_blank">tej stronie</a>.<br>
+    Konieczne będzie przyniesienie własnego laptopa, który skonfigurujemy razem, na indywidualnym spotkaniu przed kursem.<br>
 
-    Wszystkie zajęcia prowadzone będą w Krakowie w naszym biurze przy ul. Ketlinga 1.
-    W pobliżu można zaparkować samochodem, możliwy jest też dojazd komunikacją miejską liniami: 151, 178, 451. Budynek to dom zaadaptowany na biuro - przestronny i klimatyzowany. Do dyspozycji uczestników pozostaje wyposażona kuchnia i kilka łazienek.
-    Osoby które są z daleka lub nie chcą tracić czasu na dojazd mogą bezpłatne nocować na górnych piętrach budynku, specjalnie do tego dostosowanych.
+    Wszystkie zajęcia prowadzone będą w Krakowie w naszym biurze przy ul. Ketlinga 1.<br>
+    W pobliżu można zaparkować samochodem, możliwy jest też dojazd komunikacją miejską liniami: 151, 178, 451. Budynek to dom zaadaptowany na biuro - przestronny i klimatyzowany. Do dyspozycji uczestników pozostaje wyposażona kuchnia i kilka łazienek.<br>
+    Osoby które są z daleka lub nie chcą tracić czasu na dojazd mogą bezpłatne nocować na górnych piętrach budynku, specjalnie do tego dostosowanych.<br><br>
 
     Aby zarezerwować miejsce na kursie, konieczna jest wpłata opłaty rezerwacyjnej.
     <br><br>
@@ -35,7 +35,7 @@
     Dane organizatora kursu:<br>
     <b>Krzysztof Stanio Dyktek</b> <br>
     <b>NIP: </b>8133197081<br>
-    <b>Adres: </b>ul. Ketlinga 1, 32-020 Kraków<br>
+    <b>Adres: </b>ul. Ketlinga 1, 30-389 Kraków<br>
     <br><br>
 
     W razie pytań pozostajemy do Twojej dyspozycji pod numerem telefonu <b>+48 535 001 087</b>.<br>
