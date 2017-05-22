@@ -15,22 +15,24 @@ use TCG\Voyager\Http\Controllers\Traits\DatabaseUpdate;
 use TCG\Voyager\Models\DataType;
 use TCG\Voyager\Models\Permission;
 use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
-use TCG\Voyager\Voyager;
 use TCG\Voyager\Http\Controllers\VoyagerBreadController;
 use Illuminate\Support\Facades\Auth;
 use DevDojo\Chatter\Models\Models;
 use App\PostsToComments;
 use DevDojo\Chatter\Controllers\ChatterDiscussionController;
+use TCG\Voyager\Facades\Voyager;
 
 
 class VoyagerController extends VoyagerBreadController
 {
+    use BreadRelationshipParser;
+
     public function store(Request $request)
     {
         $slug = $this->getSlug($request);
         $dataType = DataType::where('slug', '=', $slug)->first();
         // Check permission
-        Voyager::can('add_' . $dataType->name);
+        Voyager::canOrFail('add_'.$dataType->name);
 
         if (function_exists('voyager_add_post')) {
             $url = $request->url();
@@ -108,10 +110,10 @@ class VoyagerController extends VoyagerBreadController
     {
         $slug = $this->getSlug($request);
 
-        $dataType = DataType::where('slug', '=', $slug)->first();
+        $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
 
         // Check permission
-        Voyager::can('edit_' . $dataType->name);
+        Voyager::canOrFail('edit_'.$dataType->name);
 
         $relationships = $this->getRelationships($dataType);
 
