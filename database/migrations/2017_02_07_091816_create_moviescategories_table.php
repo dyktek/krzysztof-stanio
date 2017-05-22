@@ -13,10 +13,14 @@ class CreateMoviescategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('moviescategories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('moviescategories'))
+        {
+            Schema::create('moviescategories', function (Blueprint $table) {
+                $table->increments('id');
+                $table->timestamps();
+            });
+        }
+
     }
 
     /**

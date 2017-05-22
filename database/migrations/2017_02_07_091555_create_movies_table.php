@@ -13,10 +13,13 @@ class CreateMoviesTable extends Migration
      */
     public function up()
     {
-        Schema::create('movies', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('movies'))
+        {
+            Schema::create('movies', function (Blueprint $table) {
+                $table->increments('id');
+                $table->timestamps();
+            });
+        }
     }
 
     /**

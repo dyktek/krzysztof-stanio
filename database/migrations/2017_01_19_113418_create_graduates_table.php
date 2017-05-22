@@ -13,10 +13,13 @@ class CreateGraduatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('graduates', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('graduates'))
+        {
+            Schema::create('graduates', function (Blueprint $table) {
+                $table->increments('id');
+                $table->timestamps();
+            });
+        }
     }
 
     /**
