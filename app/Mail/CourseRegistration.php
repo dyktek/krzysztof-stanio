@@ -9,9 +9,9 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class CourseRegistration extends Mailable
 {
-    protected $who;
-
     use Queueable, SerializesModels;
+
+    protected $who;
 
     /**
      * Create a new message instance.
