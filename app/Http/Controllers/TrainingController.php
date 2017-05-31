@@ -43,10 +43,6 @@ class TrainingController extends Controller
                 $m->to($who);
             });
 
-        Mail::to('katarzynan@gmail.com')
-            ->send(new TraineeshipContactForm($request);
-
-
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
 
     }
