@@ -39,7 +39,7 @@ class TrainingController extends Controller
         $who = $request['nazwisko'];
         $email = $request['e-mail'];
 
-        Mail::send('emails.registration', ['who' => $who], function($m) use ($who) {
+        Mail::send('emails.registration', ['who' => $who, 'email' => $email], function($m) use ($who, $email) {
                 $m->to($email);
             });
 
