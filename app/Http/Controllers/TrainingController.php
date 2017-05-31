@@ -40,16 +40,32 @@ class TrainingController extends Controller
         $email = $request['e-mail'];
         $subject = 'Zgłoszenie na szkolenie';
 
+        Mail::send('emails.registration', ['who' => $who, 'email' => $email, 'subject' => $subject], function($m) use ($who, $email, $subject) {
+                $m->to($email)
+                $m->subject($subject);
+            });
+
+        $to2 = 'katarzynan@gmail.com';
+        $subject2 = 'Nowy formularz zgłoszenia na szkolenie ze strony www.krzysztof-stanio.pl';
+        $senderName = $request['nazwisko'];
+        $senderMail = $request['e-mail'];
+        $senderPhone = $request['telefon'];
+        $senderMessage = $request['opis'];
 
 
-        var_dump($who);
-        die;
-
-        Mail::send(new CourseRegistration(['who' => $who, 'email' => $email, 'subject' => $subject], function($m) use ($who, $email, $subject) {
-                $m->to($email);
-            }));
-
-
+        Mail::send('emails.newRegistration', [
+            'subject' => $subject2,
+            'to2' => $to2,
+            'senderName' => $senderName,
+            'senderMail' => $senderMail,
+            'senderPhone' => $senderPhone,
+            'senderMessage' => $senderMessage
+        ],
+            function($m) use ($subject2, $to2, $senderName, $senderMail, $senderPhone, $senderMessage) {
+            $m->to($to2)
+                $m->subject($subject2);
+            });
+        
 
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
 

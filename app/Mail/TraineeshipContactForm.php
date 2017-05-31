@@ -9,7 +9,10 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class TraineeshipContactForm extends Mailable
 {
-    protected $message;
+    protected $senderMail;
+    protected $senderName;
+    protected $senderPhone;
+    protected $senderMessage;
 
     use Queueable, SerializesModels;
 
@@ -18,10 +21,10 @@ class TraineeshipContactForm extends Mailable
      *
      * @return void
      */
-    public function __construct($message)
-    {
-        $this->message = $message;
 
+    public function __construct()
+    {
+        //
     }
 
     /**
@@ -31,17 +34,6 @@ class TraineeshipContactForm extends Mailable
      */
     public function build()
     {
-        $from = 'kontakt@krzysztof-stanio.pl';
-        $to = 'katarzynan@gmail.com';
-        $subject = 'Nowy formularz zgłoszenia na szkolenie ze strony www.krzysztof-stanio.pl';
-        return $this->from($from)
-            ->to($to)
-            ->subject($subject)
-            ->view('emails.newRegistration',[
-                'senderMail' => $this->message->senderMail,
-                'senderName' => $this->message->senderName,
-                'senderPhone' => $this->message->senderPhone,
-                'senderMessage' => $this->message->senderMessage
-            ]);
+        //
     }
 }
