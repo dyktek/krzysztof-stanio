@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\CourseRegistration;
+use App\Mail\TraineeshipContactForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Mail;
@@ -39,7 +40,9 @@ class TrainingController extends Controller
         $email = $request['e-mail'];
 
         Mail::to($email)
-            ->send(new CourseRegistration($who));
+            ->send(new CourseRegistration($who))
+            ->send(new TraineeshipContactForm($request));
+
 
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
 
