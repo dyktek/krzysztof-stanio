@@ -14,71 +14,64 @@
             <div class="col-lg-6 col-md-6 col-sm-6 thumb-box5">
                 <h2 class="center indent">Kursy<br>programowania</h2>
                 <p class="center">
-                    Prowadzimy praktyczne szkolenia, dla osób które chcą nauczyć się programowania. Naukę zaczynamy od
-                    podstaw, dlatego każdy, kto chce zdobyć nową wiedzę może zapisać się na nasze szkolenie.</p>
+                    Prowadzę praktyczne szkolenia dla osób, które chcą nauczyć się programowania. Naukę zaczynam od
+                    podstaw, dlatego kierowane jest do wszystkich zainteresowanych.</p>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li>Zajęcia prowadzone są w kilkuosobowej grupie, dzięki czemu, każdy uczestnik może liczyć
-                                na indywidualne porady i ćwiczenia. Szkolenia dopasowane są do potrzeb rynku, na którym
-                                wciąż brakuje programistów. Sami od lat zajmujemy się programowaniem, dlatego najlepiej
-                                znamy wymagania pracodawców i możemy odpowiednio ukierunkować uczestników szkolenia.
+                            <li>Od czerwca 2017 r. zajęcia prowadzę w trybie <b>indywidualnym</b>, dzięki czemu każdy uczestnik może liczyć
+                                na dopasowane porady i ćwiczenia. Szkolenia dostosowane są do potrzeb rynku pracy, na którym
+                                wciąż brakuje programistów. Sam od lat zajmuję się programowaniem, dlatego najlepiej
+                                znam wymagania pracodawców i dlatego mogę odpowiednio ukierunkować uczestników mojego szkolenia.
                             </li>
-                            <li><b style="color:green;">Dla uczestników szkolnia spoza Krakowa mamy przygotowane wygodne
-                                    pokoje z możliwoscią
-                                    noclegu :)</b>
+                            <li>Aby uczestniczyć w zajęciach należy posiadać własny laptop. Podczas startu szkolenia
+                                pomogę Ci w konfiguracji środowiska programistycznego.
                             </li>
-
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li>Zajęcia prowadzone są w formie warsztatów przez doświadczonych trenerów i programistów -
-                                m.in. Krzysztofa Stanio, który prowadzi kanał na Youtube "App". Stawiamy
-                                na praktykę, dlatego każdy z uczestników kursu, będzie samodzielnie pisać podstawowe
-                                skrypty, aby stopniowo rozwijać swoje umiejętności i tworzyć coraz bardziej
-                                skomplikowane programy.
+                            <li>Zajęcia prowadzone są w formie <b>warsztatów i ćwiczeń</b>. Szkolenie prowadzone jest przez Krzysztofa
+                                Stanio, znanego z popularnego kanału
+                                <a href="https://www.youtube.com/channel/UCrSxel4Mheo6XA8IPMA-3ZQ"><u>Od zera do WebDeva</u></a>.
                             </li>
-                            <li>Aby uczestniczyć w zajęciach należy posiadać własny laptop. Podczas startu szkolenia
-                                pomagamy w konfiguracji środowiska programistycznego.
+                            <li>Stawiam przede wszystkim na praktykę, dlatego każdy z uczestników kursu będzie samodzielnie
+                                pisać podstawowe skrypty, aby stopniowo rozwijać swoje umiejętności i tworzyć coraz bardziej skomplikowane programy.
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 thumb-box5">
-                <h2 class="center indent">Najbliższa <br> edycja</h2>
+                <h2 class="center indent">Najbliższe <br> szkolenie</h2>
                 <p class="center">
-                    Aby zarezerwować miejsce na szkoleniu wpłacisz opłatę rezerwacyjną w kwocie 100 zł, resztę zapłacisz
-                    przed szkoleniem.
-                    Po rejestracji na szkolenie będą ustalał indywidualne spotkania z każdym z Was po to aby przygotować
-                    Wasze środowisko pracy</p>
+                    Szkolenie prowadzone jest w trybie indywidualnym - oznacza to, że to właśnie Ty decydujesz, kiedy się rozpocznie
+                    i od Twojego tempa nauki zależy, kiedy się skończy.</p>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li> Start najbliższej edycji: <b style="color:green;">26 maja 2017</b></li>
-                            <li>Czas trwania:<b> 6 tygodni (edycja weekendowo-wieczorowa)</b></li>
-                            <li>Liczba godzin:<b> 157 </b></li>
-                            <li>Opłata za rezerwację:<b> 100 zł</b></li>
-                            <li style="color:green;">Całkowity koszt szkolenia:<b> 4000 zł</b></li>
-                            <li><b>Możliwość płatności w 4 ratach po 1000zł</b></li>
-                            <li>Jeśli masz pytania związane z ofertą, zadzwoń:<b> 535 001 087</b></li>
+                            <li>Możesz teraz łatwo dopasować godziny nauki i spotkań do swoich obowiązków zawodowych czy rodzinnych - możemy umawiać się na Skype, lub osobiście w Krakowie, Rzeszowie, Łodzi lub Gliwicach.</li>
+                            <li>Ostateczny program zajęć zależy od Ciebie - jeśli jesteś początkujący, możemy poświęcić więcej czasu na rzetelne poznanie podstaw.</li>
+                            <li>Jeśli jednak potrafisz już programować i nie chcesz realizować całego programu, np. interesuje Cię jedynie Laravel czy JavaScript, to nie ma problemu - dopasuję program do Twoich potrzeb.</li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <ul class="list1-1">
-                            <li>Harmonogram weekendowego zjazdu:
-                                <b><br> piątek 18:00-22:00 <br> sobota 10:00-19:00 <br> niedziela 10:00-19:00 </b></li>
-                        </ul>
+
+                        <li>Przybliżona liczba godzin:<b> 157 h</b></li>
+                        <li style="color:green;">Całkowity koszt szkolenia:<b> 4000 zł</b></li>
+                        <li><b>Możliwość płatności w 4 ratach po 1000 zł</b></li>
+                        <li>Jeśli masz pytania związane z ofertą, zadzwoń:<b> 535 001 087</b></li>
                         <a href=#zgloszenie class="btn-default btn1">Zgłoś się na szkolenie</a>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="thumb-box6 center">
             <div class="container">
-
+                <h2 class="center" style="color:green;">Przykładowy plan szkolenia na poziomie podstawowym</h2>
+                <br><br>
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <h3>1. Moduł:<br> HTML5 + CSS3, Bootstrap - warstwa prezentacyjna</h3>
                     <h4>Podczas tego modułu poznasz:</h4>
@@ -156,24 +149,6 @@
             </div>
         </div>
 
-        <div class="global2">
-            <!--content-->
-            <div class="thumb-box2 center">
-                <div class="container">
-                    <br>
-                    <h2 class="center">Zobacz jak wygląda nasze biuro</h2>
-                    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
-                        <iframe title="Kursy programowania"
-                                src="https://www.youtube.com/embed/LU1zceBNT0g?wmode=opaque&amp;theme=dark"
-                                frameborder="0"
-                                allowfullscreen="" name="fitvid0"></iframe>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-
-
         <div class="thumb-box9" id="zgloszenie">
             <div class="container">
                 <div class="row">
@@ -181,10 +156,8 @@
                         <h2 class="wow fadeInUp">{{ Session::get('message') }}</h2>
                     @else
                         <h2 class="wow fadeInUp">Formularz zgłoszeniowy</h2>
-                        <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu? Chcesz zarezerwować
-                            miejsce?</p>
-                        <p>Wypełnij poniższy formularz - na adres e-mail prześlemy Ci szczegółowe informacje
-                            na temat warunków uczestnictwa w kursie oraz opłat.</p>
+                        <p class="wow fadeInUp">Jesteś zainteresowany udziałem w szkoleniu?</p>
+                        <p>Wypełnij poniższy formularz - na adres e-mail prześlę Ci szczegółowe informacje.</p>
                         <div class="col-lg-12 wow fadeInUp">
                             {!! Form::open(['method' => 'POST',
                              'route' => 'training.sendEmail',
@@ -208,6 +181,14 @@
                             <div style="color:red">
                                 @if($errors->has('e-mail'))
                                     {{ $errors->first('e-mail')}}
+                                    <br><br>
+                                @endif
+                            </div>
+
+                            {!! Form::textarea('descr', '', array('placeholder' => 'Tutaj napisz kilka słów o sobie - na jakim jesteś poziomie, czego oczekujesz od szkolenia', 'rows' => 5))  !!}
+                            <div style="color:red">
+                                @if($errors->has('descr'))
+                                    {{ $errors->first('descr')}}
                                     <br><br>
                                 @endif
                             </div>

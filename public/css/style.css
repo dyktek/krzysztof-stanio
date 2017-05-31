@@ -1854,6 +1854,22 @@ div.reply {
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
 }
+#training textarea {
+	background: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: 1px solid #ffffff;
+	font: bold 13px/18px 'Open Sans';
+	text-transform: uppercase;
+	color: #969696;
+	text-align: center;
+	background: #ffffff;
+	width: 570px;
+	padding: 14px;
+	margin: 0 0 35px 0;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
 
 #training [type="checkbox"] {
 	height: 15px;
