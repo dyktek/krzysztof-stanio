@@ -17,6 +17,7 @@
     <br>
     Jeśli jednak uznasz, że kontakt przez internet to za mało, możemy spotkać się w Krakowie, Rzeszowie, Łodzi lub Gliwicach.
 
+    <br><br>
     Dane organizatora kursu:<br>
     <b>Krzysztof Stanio Dyktek</b> <br>
     <b>NIP: </b>8133197081<br>
