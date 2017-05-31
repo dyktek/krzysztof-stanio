@@ -11,7 +11,7 @@ class CourseRegistration extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $who;
+    public $who;
 
     /**
      * Create a new message instance.
