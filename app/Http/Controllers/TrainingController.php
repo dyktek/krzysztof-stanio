@@ -41,8 +41,7 @@ class TrainingController extends Controller
         $subject = 'Zgłoszenie na szkolenie';
 
         Mail::send('emails.registration', ['who' => $who, 'email' => $email, 'subject' => $subject], function($m) use ($who, $email, $subject) {
-                $m->to($email)
-                $m->subject($subject);
+                $m->to($email)->subject($subject);
             });
 
         $to2 = 'katarzynan@gmail.com';
@@ -62,10 +61,9 @@ class TrainingController extends Controller
             'senderMessage' => $senderMessage
         ],
             function($m) use ($subject2, $to2, $senderName, $senderMail, $senderPhone, $senderMessage) {
-            $m->to($to2)
-                $m->subject($subject2);
+            $m->to($to2)->subject($subject2);
             });
-        
+
 
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
 
