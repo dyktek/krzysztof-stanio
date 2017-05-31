@@ -28,7 +28,7 @@ class TrainingController extends Controller
             'nazwisko' => 'required|string',
             'telefon' => 'required|string',
             'e-mail' => 'required|email',
-            'descr' => 'required',
+            'opis' => 'required',
 //            'regulamin' => 'accepted',
         ]);
         if ($validator->fails()) {

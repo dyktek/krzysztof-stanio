@@ -187,8 +187,8 @@
 
                             {!! Form::textarea('opis', '', array('placeholder' => 'Tutaj napisz kilka słów o sobie - na jakim jesteś poziomie, czego oczekujesz od szkolenia', 'rows' => 5))  !!}
                             <div style="color:red">
-                                @if($errors->has('descr'))
-                                    {{ $errors->first('descr')}}
+                                @if($errors->has('opis'))
+                                    {{ $errors->first('opis')}}
                                     <br><br>
                                 @endif
                             </div>
