@@ -40,7 +40,7 @@ class TrainingController extends Controller
         $email = $request['e-mail'];
 
         Mail::send('emails.registration', ['who' => $who], function($m) use ($who) {
-                $m->to($who);
+                $m->to($email);
             });
 
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
