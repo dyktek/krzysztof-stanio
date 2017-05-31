@@ -11,14 +11,14 @@
 <div class="emailbody" style="font-family: 'Open Sans', sans-serif;text-align: justify;">
    Cześć, Krzysiek :-P<br><br>
 
-    ktoś właśnie wypełnił formularz zgłoszenia na szkolenie na Twojej stronie.<br>
-    <b>Imię:</b> {{ $senderName }}
+    Ktoś właśnie wypełnił formularz zgłoszenia na szkolenie na Twojej stronie.<br>
+    <b>Imię: </b> {{ $senderName }}
     <br>
-    <b>Mail:</b> {{ $senderMail }}
+    <b>Mail: </b> {{ $senderMail }}
     <br>
-    <b>Telefon:</b> {{ $senderPhone }}
+    <b>Telefon: </b> {{ $senderPhone }}
     <br>
-    <b>Opis:</b>{{ $senderMessage}}
+    <b>Opis: </b>{{ $senderMessage}}
     <br>
 
 

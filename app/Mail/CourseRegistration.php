@@ -11,16 +11,14 @@ class CourseRegistration extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $who;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($who)
+    public function __construct()
     {
-        $this->who = $who;
     }
 
     /**
@@ -30,10 +28,7 @@ class CourseRegistration extends Mailable
      */
     public function build()
     {
-        $subject = 'Zgłoszenie na szkolenie';
-
-        return $this->view('emails.registration')
-            ->subject($subject);
+    //
     }
 }
 

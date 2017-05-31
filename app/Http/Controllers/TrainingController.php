@@ -44,7 +44,7 @@ class TrainingController extends Controller
                 $m->to($email)->subject($subject);
             });
 
-        $to2 = 'katarzynan@gmail.com';
+        $to2 = 'kontakt@krzysztof-stanio.pl';
         $subject2 = 'Nowy formularz zgłoszenia na szkolenie ze strony www.krzysztof-stanio.pl';
         $senderName = $request['nazwisko'];
         $senderMail = $request['e-mail'];

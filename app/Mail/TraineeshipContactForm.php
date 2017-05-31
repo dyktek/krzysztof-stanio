@@ -9,10 +9,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class TraineeshipContactForm extends Mailable
 {
-    protected $senderMail;
-    protected $senderName;
-    protected $senderPhone;
-    protected $senderMessage;
 
     use Queueable, SerializesModels;
 
