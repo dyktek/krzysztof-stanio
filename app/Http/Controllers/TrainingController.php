@@ -39,14 +39,16 @@ class TrainingController extends Controller
         $who = $request['nazwisko'];
         $email = $request['e-mail'];
 
-        Mail::to($email)
-            ->send(new CourseRegistration($who))
-            ->send(new TraineeshipContactForm($request));
+        Mail::send('emails.registration', ['who' => $who], function($m) use ($who) {
+                $m->to($who);
+            });
+
+        Mail::to('katarzynan@gmail.com')
+            ->send(new TraineeshipContactForm($request);
 
 
         return redirect('/kursy-programowania/#zgloszenie')->with('message', 'Dziękujemy. Na Twój adres e-mail została wysłana informacja dot. dalszych kroków.');
 
     }
-
 }
 
