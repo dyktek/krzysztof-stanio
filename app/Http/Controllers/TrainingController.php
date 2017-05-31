@@ -42,6 +42,9 @@ class TrainingController extends Controller
 
 
 
+        error_log($who);
+        die;
+        
         Mail::send(new CourseRegistration(['who' => $who, 'email' => $email, 'subject' => $subject], function($m) use ($who, $email, $subject) {
                 $m->to($email);
             }));
